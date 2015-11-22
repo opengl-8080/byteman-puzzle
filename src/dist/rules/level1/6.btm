@@ -1,0 +1,6 @@
+RULE level1-6
+CLASS Level1
+METHOD step
+IF 50 < $0.t
+DO $0.s = 2
+ENDRULE

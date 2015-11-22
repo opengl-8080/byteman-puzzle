@@ -1,0 +1,6 @@
+RULE level1-5
+CLASS Level1
+METHOD step
+IF $0.s == 0
+DO $0.t = 2
+ENDRULE

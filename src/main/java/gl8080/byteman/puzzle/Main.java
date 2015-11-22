@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import gl8080.byteman.puzzle.level0.Level0;
+import gl8080.byteman.puzzle.level1.Level1;
 
 public class Main {
     
@@ -17,7 +18,8 @@ public class Main {
     }
     
     private static final List<PuzzleGame> GAME_LIST = Arrays.asList(
-        new Level0()
+        new Level0(),
+        new Level1()
     );
     
     private String[] args;

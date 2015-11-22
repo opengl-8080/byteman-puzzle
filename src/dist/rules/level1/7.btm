@@ -1,0 +1,6 @@
+RULE level1-7
+CLASS Level1
+METHOD step
+IF $0.t == 100
+DO return $0.t < $0.s
+ENDRULE

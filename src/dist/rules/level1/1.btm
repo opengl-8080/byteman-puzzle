@@ -1,0 +1,6 @@
+RULE level1-1
+CLASS Level1
+METHOD isTurth
+IF true
+DO return false
+ENDRULE

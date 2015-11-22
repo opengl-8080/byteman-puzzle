@@ -1,0 +1,6 @@
+RULE level1-4
+CLASS Level1
+METHOD step
+IF true
+DO $0.t = 100
+ENDRULE

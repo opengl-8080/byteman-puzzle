@@ -1,0 +1,7 @@
+RULE level1-3
+CLASS Level1
+METHOD step
+AT EXIT
+IF true
+DO return t < s
+ENDRULE

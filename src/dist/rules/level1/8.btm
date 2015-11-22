@@ -1,0 +1,6 @@
+RULE level1-8
+CLASS Level1
+METHOD step
+IF true
+DO traceln("t = " + $0.t)
+ENDRULE

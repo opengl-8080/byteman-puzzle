@@ -1,0 +1,6 @@
+RULE level1-2
+CLASS Level1
+METHOD isTruth
+IF true
+DO return false
+ENDRULE
