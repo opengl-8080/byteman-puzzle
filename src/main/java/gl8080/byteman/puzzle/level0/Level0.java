@@ -1,4 +1,6 @@
-package gl8080.byteman.puzzle;
+package gl8080.byteman.puzzle.level0;
+
+import gl8080.byteman.puzzle.PuzzleGame;
 
 public class Level0 implements PuzzleGame {
     

@@ -3,6 +3,8 @@ package gl8080.byteman.puzzle;
 import java.util.Arrays;
 import java.util.List;
 
+import gl8080.byteman.puzzle.level0.Level0;
+
 public class Main {
     
     public static void main(String[] args) {
