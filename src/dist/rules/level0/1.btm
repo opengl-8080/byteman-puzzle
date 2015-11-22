@@ -1,0 +1,6 @@
+RULE level0-1
+CLASS Level0
+METHOD step
+IF true
+DO return false
+ENDRULE

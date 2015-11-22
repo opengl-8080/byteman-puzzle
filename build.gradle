@@ -1,0 +1,41 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+mainClassName = 'gl8080.byteman.puzzle.Main'
+
+startScripts {
+    applicationName = 'puzzle'
+}
+startScripts.with {
+    doLast {
+        println("hoge")
+        unixScript.text = unixScript.text.replaceAll('DEFAULT_JVM_OPTS=""',
+                'DEFAULT_JVM_OPTS="-javaagent:\\$APP_HOME/lib/byteman-3.0.2.jar=listener:true"')
+        windowsScript.text = windowsScript.text.replaceAll('set DEFAULT_JVM_OPTS=',
+                'set DEFAULT_JVM_OPTS="-javaagent:%~dp0..\\\\lib\\\\byteman-3.0.2.jar=listener:true"')
+    }
+}
+
+startScripts.with {
+    doLast {
+    }
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.jboss.byteman:byteman:3.0.2'
+    compile 'org.jboss.byteman:byteman-submit:3.0.2'
+}
+
+eclipse.project.name = 'byteman-game'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}
