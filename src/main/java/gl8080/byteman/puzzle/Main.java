@@ -5,7 +5,7 @@ import java.util.List;
 
 import gl8080.byteman.puzzle.level0.Level0;
 import gl8080.byteman.puzzle.level1.Level1;
-import gl8080.byteman.puzzle.level2.Level4;
+import gl8080.byteman.puzzle.level4.Level4;
 import gl8080.byteman.puzzle.util.TimeFormatter;
 
 public class Main {

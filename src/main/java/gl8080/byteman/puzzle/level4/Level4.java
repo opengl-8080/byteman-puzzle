@@ -1,4 +1,4 @@
-package gl8080.byteman.puzzle.level2;
+package gl8080.byteman.puzzle.level4;
 
 import gl8080.byteman.puzzle.PuzzleGame;
 
