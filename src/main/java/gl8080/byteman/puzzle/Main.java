@@ -5,6 +5,7 @@ import java.util.List;
 
 import gl8080.byteman.puzzle.level0.Level0;
 import gl8080.byteman.puzzle.level1.Level1;
+import gl8080.byteman.puzzle.util.TimeFormatter;
 
 public class Main {
     
@@ -23,6 +24,8 @@ public class Main {
     );
     
     private String[] args;
+    private long startTime;
+    private long endTime;
     
     public Main(String[] args) {
         this.args = args;
@@ -30,7 +33,7 @@ public class Main {
     
     public void start() throws IllegalParameterException {
         PuzzleGame game = this.createGame();
-        
+        this.startTime = System.currentTimeMillis();
         System.out.println("LEVEL " + game.getLevel() + " Start!");
         
         boolean flag = true;
@@ -39,8 +42,12 @@ public class Main {
             flag = game.step();
             this.sleep();
         }
-        
-        System.out.println("SUCCESS!!");
+        this.endTime = System.currentTimeMillis();
+        System.out.println("SUCCESS!! (time = " + this.calcTime() + ")");
+    }
+    
+    private String calcTime() {
+        return new TimeFormatter().format(this.endTime - this.startTime);
     }
     
     public PuzzleGame createGame() throws IllegalParameterException {

@@ -31,6 +31,7 @@ repositories {
 dependencies {
     compile 'org.jboss.byteman:byteman:3.0.2'
     compile 'org.jboss.byteman:byteman-submit:3.0.2'
+    testCompile 'junit:junit:4.12'
 }
 
 eclipse.project.name = 'byteman-game'
