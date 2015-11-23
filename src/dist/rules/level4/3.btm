@@ -1,0 +1,6 @@
+RULE level2-3
+CLASS Level2
+METHOD step
+IF true
+DO $this.beta = false
+ENDRULE

@@ -1,0 +1,7 @@
+RULE level2-4
+CLASS Level2
+METHOD step
+AT LINE 
+IF !$this.beta AND !$this.gamma
+DO $this.alpha = true
+ENDRULE

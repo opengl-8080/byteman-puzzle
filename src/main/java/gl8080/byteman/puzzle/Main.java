@@ -5,6 +5,7 @@ import java.util.List;
 
 import gl8080.byteman.puzzle.level0.Level0;
 import gl8080.byteman.puzzle.level1.Level1;
+import gl8080.byteman.puzzle.level2.Level4;
 import gl8080.byteman.puzzle.util.TimeFormatter;
 
 public class Main {
@@ -20,7 +21,8 @@ public class Main {
     
     private static final List<PuzzleGame> GAME_LIST = Arrays.asList(
         new Level0(),
-        new Level1()
+        new Level1(),
+        new Level4()
     );
     
     private String[] args;

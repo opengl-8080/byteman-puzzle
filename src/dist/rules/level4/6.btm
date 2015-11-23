@@ -1,0 +1,7 @@
+RULE level2-6
+CLASS Level2
+METHOD step
+AT LINE 32
+IF true
+DO $this.gamma = false
+ENDRULE

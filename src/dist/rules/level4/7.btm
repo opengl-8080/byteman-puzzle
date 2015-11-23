@@ -1,0 +1,8 @@
+RULE level2-2
+CLASS Level2
+METHOD step
+IF true
+DO $this.alpha = true;
+   $this.beta = false;
+   $this.gamma = true;
+ENDRULE

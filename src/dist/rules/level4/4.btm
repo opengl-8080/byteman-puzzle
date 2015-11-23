@@ -1,0 +1,6 @@
+RULE level2-4
+CLASS Level2
+METHOD step
+IF true
+DO $this.alpha = false
+ENDRULE
