@@ -1,0 +1,7 @@
+RULE level2-6
+CLASS Level2
+METHOD method
+AT READ c
+IF true
+DO c = 'J'
+ENDRULE

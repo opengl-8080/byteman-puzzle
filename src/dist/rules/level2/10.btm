@@ -1,0 +1,6 @@
+RULE level2-10
+CLASS String
+METHOD startsWith(String)
+IF $1.equals("a")
+DO $! = false
+ENDRULE

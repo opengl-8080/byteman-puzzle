@@ -1,0 +1,7 @@
+RULE level2-3
+CLASS Level2
+METHOD createInstance
+AT EXIT
+IF true
+DO $! = new gl8080.byteman.puzzle.level2.Beta()
+ENDRULE

@@ -1,5 +1,5 @@
-RULE level2-8
-CLASS Level2
+RULE level4-8
+CLASS Level4
 METHOD step
 AT LINE 43
 IF !$this.alpha AND !$this.gamma

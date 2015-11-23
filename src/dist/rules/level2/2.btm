@@ -1,0 +1,7 @@
+RULE level2-2
+CLASS Level2
+METHOD step
+AT READ $obj3
+IF true
+DO $obj3 = new gl8080.byteman.puzzle.level2.Beta()
+ENDRULE

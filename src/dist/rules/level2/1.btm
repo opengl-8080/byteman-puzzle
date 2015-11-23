@@ -1,0 +1,6 @@
+RULE level2-1
+CLASS Level2
+METHOD step
+IF true
+DO $this.i = 6
+ENDRULE

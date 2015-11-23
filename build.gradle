@@ -6,17 +6,15 @@ mainClassName = 'gl8080.byteman.puzzle.Main'
 startScripts {
     applicationName = 'puzzle'
 }
+
 startScripts.with {
     doLast {
         unixScript.text = unixScript.text.replaceAll('DEFAULT_JVM_OPTS=""',
                 'DEFAULT_JVM_OPTS="-javaagent:\\$APP_HOME/lib/byteman-3.0.2.jar=listener:true"')
+        def winBytemanJar = /%~dp0..\\lib\\byteman-3.0.2.jar/;
         windowsScript.text = windowsScript.text.replaceAll('set DEFAULT_JVM_OPTS=',
-                'set DEFAULT_JVM_OPTS="-javaagent:%~dp0..\\\\lib\\\\byteman-3.0.2.jar=listener:true"')
-    }
-}
-
-startScripts.with {
-    doLast {
+                /set DEFAULT_JVM_OPTS="-javaagent:${winBytemanJar}=listener:true,boot:${winBytemanJar}"/
+                + '\r\nset PUZZLE_OPTS=-Dorg.jboss.byteman.transform.all')
     }
 }
 

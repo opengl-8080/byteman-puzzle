@@ -54,6 +54,6 @@ public class Level4 implements PuzzleGame {
 
     @Override
     public int getLevel() {
-        return 2;
+        return 4;
     }
 }

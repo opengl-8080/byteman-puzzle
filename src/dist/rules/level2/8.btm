@@ -1,0 +1,7 @@
+RULE level2-8
+CLASS Level2
+METHOD step
+AFTER INVOKE createInstance 2
+IF true
+DO return new gl8080.byteman.puzzle.level2.Beta()
+ENDRULE

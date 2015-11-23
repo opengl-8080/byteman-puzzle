@@ -1,0 +1,6 @@
+RULE level2-9
+CLASS Gamma
+METHOD process
+IF true
+DO return "abcdefg"
+ENDRULE

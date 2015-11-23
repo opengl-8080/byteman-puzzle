@@ -1,5 +1,5 @@
-RULE level2-3
-CLASS Level2
+RULE level4-3
+CLASS Level4
 METHOD step
 IF true
 DO $this.beta = false

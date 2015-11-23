@@ -1,0 +1,7 @@
+RULE level2-5
+CLASS Level2
+METHOD method
+AT READ $value
+IF true
+DO $value = "ABCDEFGIJK"
+ENDRULE

@@ -1,5 +1,5 @@
-RULE level2-4
-CLASS Level2
+RULE level4-5
+CLASS Level4
 METHOD step
 AT LINE 
 IF !$this.beta AND !$this.gamma

@@ -1,5 +1,5 @@
-RULE level2-2
-CLASS Level2
+RULE level4-2
+CLASS Level4
 METHOD step
 IF true
 DO $this.alpha = false;
