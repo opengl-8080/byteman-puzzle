@@ -32,7 +32,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-eclipse.project.name = 'byteman-game'
+eclipse.project.name = 'byteman-puzzle'
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.9'
