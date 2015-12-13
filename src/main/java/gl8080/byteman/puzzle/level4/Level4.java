@@ -8,7 +8,7 @@ public class Level4 implements PuzzleGame {
     private boolean beta = false;
     private boolean gamma = true;
     
-    private boolean debugMode = true;
+    private boolean debugMode = false;
     
     @Override
     public boolean step() {
