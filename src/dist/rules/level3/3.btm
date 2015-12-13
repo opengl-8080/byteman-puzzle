@@ -1,0 +1,7 @@
+RULE level3-3
+CLASS Level3
+METHOD step
+AT READ $n
+IF $i % 2 != 0
+DO $n = 1
+ENDRULE

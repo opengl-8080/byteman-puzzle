@@ -65,7 +65,7 @@ public class Main {
             int level = Integer.parseInt(this.args[0]);
             return GAME_LIST.get(level);
         } catch (NumberFormatException e) {
-            throw new IllegalParameterException("レベルは正数で指定してください。");
+            throw new IllegalParameterException("レベルは数値で指定してください。");
         } catch (IndexOutOfBoundsException e) {
             throw new IllegalParameterException("レベルは 0 ～ " + (GAME_LIST.size() - 1) + " の間で指定してください。");
         }

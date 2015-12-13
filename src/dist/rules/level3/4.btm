@@ -1,0 +1,7 @@
+RULE level3-4
+CLASS Level3
+METHOD add
+AT READ $a
+IF true
+DO $a = null
+ENDRULE

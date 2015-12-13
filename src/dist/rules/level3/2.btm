@@ -1,0 +1,7 @@
+RULE level3-2
+CLASS Collection
+METHOD stream
+AT ENTRY
+IF true
+DO throw new IndexOutOfBoundsException("ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!")
+ENDRULE

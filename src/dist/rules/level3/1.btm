@@ -1,0 +1,7 @@
+RULE level3-1
+CLASS Level3
+METHOD step
+AT READ $off
+IF true
+DO $off = -1
+ENDRULE

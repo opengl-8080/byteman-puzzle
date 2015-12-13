@@ -1,0 +1,7 @@
+RULE level3-5
+CLASS Level3
+METHOD step
+AT READ $number
+IF true
+DO $number = "text"
+ENDRULE

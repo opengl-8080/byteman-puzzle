@@ -1,0 +1,6 @@
+RULE level3-6
+CLASS Level3
+METHOD createFile
+IF true
+DO return null
+ENDRULE

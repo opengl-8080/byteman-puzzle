@@ -1,0 +1,7 @@
+RULE level3-7
+CLASS Level3
+METHOD add
+AT ENTRY
+IF true
+DO return null
+ENDRULE
