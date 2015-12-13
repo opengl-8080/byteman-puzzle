@@ -22,3 +22,4 @@
 1. 1.btm
 1. 6.btm
 1. 8.btm
+1. uninstall 4.btm

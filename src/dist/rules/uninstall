@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+LIB_DIR=`dirname $0`/../lib
+SUBMIT_JAR=$LIB_DIR/byteman-submit-3.0.2.jar
+MAIN_CLASS=org.jboss.byteman.agent.submit.Submit
+
+java -classpath $SUBMIT_JAR $MAIN_CLASS -u $*
